@@ -1,0 +1,41 @@
+.hero__button {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+
+  border: 1px solid $color-six;
+  background-color: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    width: 53px;
+    height: 53px;
+    padding: 15px 20px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+
+.hero__button-right {
+  position: relative;
+  background-color: $color-seven;
+}
+
+.hero__main-button {
+  position: absolute;
+  bottom: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}

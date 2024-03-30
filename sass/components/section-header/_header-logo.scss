@@ -1,0 +1,13 @@
+.logo {
+  position: relative;
+  margin-right: auto;
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 330px;
+  }
+}
+
+.logo__img {
+  position: absolute;
+  bottom: 0;
+}

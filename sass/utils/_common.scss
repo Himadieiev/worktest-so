@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-regular;
+  color: $color-five;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+button {
+  padding: 10px 13px;
+  width: 222px;
+  height: 71px;
+
+  border-width: 0;
+  background-color: $color-nine;
+
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
+  border: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+
+.title {
+  font-family: $font-light;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1em;
+  color: $color-four;
+
+  @media screen and (min-width: 480px) {
+    font-size: 45px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 64px;
+  }
+}
+
+.button-text {
+  margin-right: 12px;
+
+  font-size: 12px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+}

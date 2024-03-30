@@ -1,0 +1,28 @@
+.footer__logo {
+  display: none;
+
+  @media screen and (min-width: 685px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 100px;
+  }
+}
+
+.footer__logo-img {
+  @media screen and (max-width: 999px) {
+    width: 100px;
+  }
+}
+
+.footer__logo-secondary {
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 685px) {
+    display: none;
+  }
+}

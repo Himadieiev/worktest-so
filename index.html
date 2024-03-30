@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container container-header">
+        <a href="./index.html" class="logo">
+          <svg width="69px" height="42px" aria-label="Logo" class="logo__icon">
+            <use href="./images/logo.svg#logo"></use>
+          </svg>
+          <img src="./images/logo-text.svg" alt="Logo" class="logo__img" />
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__list list--style">
+            <li>
+              <a href="./index.html" class="navigation__link navigation__link--current">ГЛАВНАЯ</a>
+            </li>
+            <li><a href="#hero" class="navigation__link">ГАЛЕРЕЯ</a></li>
+            <li><a href="#projects" class="navigation__link">ПРОЕКТЫ</a></li>
+            <li><a href="#about" class="navigation__link">СЕРТИФИКАТЫ</a></li>
+            <li><a href="#contacts" class="navigation__link">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <div class="burger-menu__item"></div>
+          <div class="burger-menu__item"></div>
+          <div class="burger-menu__item"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Hero-->
+      <section class="hero" id="hero">
+        <div class="container container-hero">
+          <div>
+            <h1 class="hero__title">
+              <span class="hero__title-project title">PROJECT</span>
+              <span class="hero__title-home">HOME</span>
+            </h1>
+            <div class="hero__arrows-container">
+              <button type="button" class="hero__button">
+                <svg svg aria-label="Arrow" class="hero__icon" width="18" height="9">
+                  <use href="./images/arrow-left.svg#left"></use>
+                </svg>
+              </button>
+              <button type="button" class="hero__button hero__button-right">
+                <svg aria-label="Arrow" class="hero__icon" width="18" height="9">
+                  <use href="./images/arrow-right.svg#right"></use>
+                </svg>
+                <div class="hero__line-decor"></div>
+              </button>
+            </div>
+            <div class="hero__numbers-container">
+              <span class="hero__number">01</span>
+              <div class="hero__delimiter-line"></div>
+              <span class="hero__number">02</span>
+            </div>
+          </div>
+          <div class="hero__img-container">
+            <img src="./images/hero.jpg" alt="Project" class="hero__img" />
+            <button type="button" class="hero__main-button button">
+              <span class="hero__button-text button-text">ВЗГЛЯНУТЬ</span>
+              <svg aria-label="Arrow" class="hero__icon" width="18" height="9">
+                <use href="./images/arrow-right.svg#right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--About-->
+      <section class="about" id="about">
+        <div class="container container-about">
+          <div class="about__container">
+            <div class="about__img-container">
+              <div class="about__img-subcontainer">
+                <img src="./images/about1.jpg" alt="Project" class="about__img1" />
+                <img src="./images/about2.jpg" alt="Project" class="about__img2" />
+              </div>
+              <img src="./images/about3.jpg" alt="Project" class="about__img3" />
+            </div>
+            <div>
+              <h2 class="about__title title">О компании</h2>
+              <p class="about__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+              </p>
+              <button type="button" class="about__btn button">
+                <span class="about__button-text button-text">ЧИТАТЬ</span>
+                <svg aria-label="Arrow" class="hero__icon" width="18" height="9">
+                  <use href="./images/arrow-right.svg#right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Goals-->
+      <section class="goals" id="goals">
+        <div class="container container-goals">
+          <h2 class="goals__title title">Основные задачи</h2>
+          <div class="goals__content-container">
+            <div class="goals__content">
+              <span class="goals__number">1</span>
+              <p class="goals__text goals__text--one">
+                Создание комфортных условий и повышение качества обслуживания клиентов
+              </p>
+            </div>
+            <div class="goals__content goals__content--two">
+              <span class="goals__number">2</span>
+              <p class="goals__text goals__text--two">
+                Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала,
+                закупки нового оборудования и усиленной рекламы на рынке
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Projects-->
+      <section class="projects" id="projects">
+        <div class="container container-projects">
+          <h2 class="projects__title title">Наши проекты</h2>
+          <div class="projects__content-container">
+            <div class="projects__text-container">
+              <h3 class="projects__subtitle">ДОСУГОВЫЙ ЦЕНТР</h3>
+              <button type="button" class="projects__btn--trans">
+                <span class="projects__btn-text button-text"> ПОДРОБНЕЕ </span>
+                <svg aria-label="Arrow" class="projects__icon" width="17" height="8">
+                  <use href="./images/arrow-right-white.svg#right-white"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__img-container">
+              <img src="./images/project2.jpg" alt="Project" class="projects__img" />
+            </div>
+            <div class="projects__img-container">
+              <img
+                src="./images/project3.jpg"
+                alt="Project"
+                class="projects__img projects__img--two"
+              />
+            </div>
+            <div class="projects__img-container">
+              <img src="./images/project4.jpg" alt="Project" class="projects__img" />
+            </div>
+            <div class="projects__img-container">
+              <img src="./images/project5.jpg" alt="Project" class="projects__img" />
+            </div>
+          </div>
+          <button type="button" class="projects__btn button">
+            <span class="projects__btn-text button-text">ВСЕ ПРОЕКТЫ</span>
+            <svg aria-label="Arrow" class="projects__icon" width="17" height="8">
+              <use href="./images/arrow-right-white.svg#right-white"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!--Contacts-->
+      <section class="contacts" id="contacts">
+        <div class="container container-contacts">
+          <h2 class="contacts__title title">Связаться с нами</h2>
+          <div class="contacts__content">
+            <form class="contacts__form">
+              <label class="contacts__field">
+                <input type="text" name="name" class="contacts__input" placeholder="Имя" />
+              </label>
+              <label class="contacts__field">
+                <input
+                  type="text"
+                  name="name"
+                  class="contacts__input"
+                  placeholder="Номер телефона*"
+                />
+              </label>
+              <label class="contacts__field">
+                <input type="text" name="name" class="contacts__input" placeholder="E-mail*" />
+              </label>
+              <label class="contacts__field">
+                <input
+                  type="text"
+                  name="name"
+                  class="contacts__input"
+                  placeholder="Интересующий товар/услуга"
+                />
+              </label>
+              <label class="contacts__field">
+                <textarea
+                  name="comment"
+                  placeholder="Сообщение*"
+                  class="contacts__textarea"
+                ></textarea>
+              </label>
+              <label class="contacts__checkbox">
+                <input type="checkbox" name="accept" class="contacts__checkbox-input" />
+                <span class="contacts__checkbox-text">
+                  Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                </span>
+              </label>
+              <button type="submit" class="contacts__btn button">
+                <span class="contacts__btn-text button-text">ОТПРАВИТЬ</span>
+                <svg aria-label="Arrow" class="projects__icon" width="17" height="8">
+                  <use href="./images/arrow-right-white.svg#right-white"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="contacts__img-container">
+              <img src="./images/contact.jpg" alt="" class="contacts__img" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <a href="./index.html" class="footer__logo footer__logo-secondary">
+        <img src="./images/logo-footer.png" alt="Logo" class="footer__logo-img" />
+      </a>
+      <div class="container-footer">
+        <a href="./index.html" class="footer__logo">
+          <img src="./images/logo-footer.png" alt="Logo" class="footer__logo-img" />
+        </a>
+        <div class="footer__nav-container">
+          <h3 class="footer__subtitle">Информация</h3>
+          <nav>
+            <ul class="footer__nav-list list--style">
+              <li>
+                <a href="./index.html" class="footer__nav-link">Главная</a>
+              </li>
+              <li><a href="#" class="footer__nav-link text-style">Галерея</a></li>
+              <li><a href="#" class="footer__nav-link text-style">Проекты</a></li>
+              <li><a href="#" class="footer__nav-link text-style">Сертификаты</a></li>
+              <li><a href="#" class="footer__nav-link text-style">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contacts-container">
+          <h3 class="footer__subtitle">Контакты</h3>
+          <ul class="footer__contacts-list list--style">
+            <li class="footer__contacts-item">
+              <svg aria-label="Location" width="11" height="16" class="location-icon">
+                <use href="./images/location.svg#loc"></use>
+              </svg>
+              <a
+                href="https://goo.gl/maps/XSWccQPUmA9QjgVb7"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__contacts-link footer__contacts-link--locatoin text-style"
+                >100000, Республика Казахстан, <br />г. Караганда, ул. Телевизионная 10</a
+              >
+            </li>
+            <li class="footer__contacts-item">
+              <svg aria-label="Phone" width="16" height="16">
+                <use href="./images/phone.svg#ph"></use>
+              </svg>
+              <a href="tel:+380000000000" class="footer__contacts-link text-style">
+                +38 (000) 000 00 00
+              </a>
+            </li>
+            <li class="footer__contacts-item">
+              <svg aria-label="Mail" width="16" height="11">
+                <use href="./images/envelope.svg#env"></use>
+              </svg>
+              <a href="mailto:mail@gmail.com" class="footer__contacts-link text-style">
+                mail@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social-container">
+          <h3 class="footer__subtitle">Социальные сети</h3>
+          <ul class="footer__social-list list--style">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-item"
+              >
+                <svg aria-label="Facebook" width="10" height="19">
+                  <use href="./images/facebook.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/"
+                class="footer__social-item"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg aria-label="Twitter" width="22" height="17">
+                  <use href="./images/twitter.svg#tw"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-item"
+              >
+                <svg aria-label="Linkedin" width="20" height="20">
+                  <use href="./images/linkedin.svg#li"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://pinterest.com/"
+                class="footer__social-item"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg aria-label="Pininterest" width="14" height="19">
+                  <use href="./images/pininterest.svg#pin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__line-decor"></div>
+      <div class="footer__copyright">© 2019 Digital Project. Все права защищены.</div>
+    </footer>
+    <script src="./js/currentLink.js"></script>
+  </body>
+</html>
