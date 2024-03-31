@@ -13,7 +13,11 @@
 .footer__contacts-list {
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 16px;
+
+  @media screen and (min-width: 535px) {
+    gap: 33px;
+  }
 }
 
 .footer__contacts-item {
@@ -21,8 +25,17 @@
   gap: 14px;
   align-items: first baseline;
 
+  cursor: pointer;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (max-width: 535px) {
     justify-content: center;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-color-two;
   }
 }
 

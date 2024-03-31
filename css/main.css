@@ -123,6 +123,7 @@ textarea {
   src: url("../../fonts/TTHoves-Bold.ttf") format("truetype");
 }
 .header {
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -136,6 +137,10 @@ textarea {
     padding-bottom: 0;
     background-color: #fff;
   }
+}
+
+.header.scrolled {
+  background-color: #f3f3f3;
 }
 
 .container-header {
@@ -162,8 +167,10 @@ textarea {
 }
 
 .burger-menu {
+  position: relative;
   width: 30px;
   height: 22px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +181,6 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .burger-menu {
@@ -188,12 +194,51 @@ textarea {
   background-color: #2c2c2c;
 }
 
+.burger-menu.is-open::before,
+.burger-menu.is-open::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #2c2c2c;
+}
+
+.burger-menu.is-open::before {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.burger-menu.is-open::after {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+.burger-menu.is-open .burger-menu__item {
+  display: none;
+}
+
 .navigation {
   display: none;
 }
 @media screen and (min-width: 768px) {
   .navigation {
     display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation.is-open {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    padding: 40px;
+    display: block;
+    text-align: center;
+    background-color: #e0e0e0;
   }
 }
 
@@ -231,6 +276,8 @@ textarea {
   text-transform: uppercase;
   line-height: 1em;
   letter-spacing: 0.2em;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .navigation__link {
@@ -238,6 +285,9 @@ textarea {
     padding-bottom: 40px;
     font-size: 12px;
   }
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: rgb(92, 92, 222);
 }
 
 .navigation__link--current::after {
@@ -1171,6 +1221,14 @@ textarea {
   gap: 16px;
 }
 
+.footer__nav-link {
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__nav-link:hover, .footer__nav-link:focus {
+  color: rgb(92, 92, 222);
+}
+
 .footer__contacts-container {
   margin-right: 0;
 }
@@ -1193,7 +1251,12 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 33px;
+  gap: 16px;
+}
+@media screen and (min-width: 535px) {
+  .footer__contacts-list {
+    gap: 33px;
+  }
 }
 
 .footer__contacts-item {
@@ -1204,6 +1267,9 @@ textarea {
   -webkit-box-align: first baseline;
       -ms-flex-align: first baseline;
           align-items: first baseline;
+  cursor: pointer;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 535px) {
   .footer__contacts-item {
@@ -1211,6 +1277,9 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+.footer__contacts-item:hover, .footer__contacts-item:focus {
+  color: rgb(92, 92, 222);
 }
 
 .footer__contacts-link--locatoin {
@@ -1246,4 +1315,13 @@ textarea {
     width: 193px;
     gap: 40px;
   }
+}
+
+.footer__icon {
+  fill: #fff;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__icon:hover, .footer__icon:focus {
+  fill: rgb(92, 92, 222);
 }/*# sourceMappingURL=main.css.map */

@@ -23,7 +23,7 @@
           </svg>
           <img src="./images/logo-text.svg" alt="Logo" class="logo__img" />
         </a>
-        <nav class="navigation">
+        <nav class="navigation mobile-menu">
           <ul class="navigation__list list--style">
             <li>
               <a href="./index.html" class="navigation__link navigation__link--current">ГЛАВНАЯ</a>
@@ -241,10 +241,10 @@
               <li>
                 <a href="./index.html" class="footer__nav-link">Главная</a>
               </li>
-              <li><a href="#" class="footer__nav-link text-style">Галерея</a></li>
-              <li><a href="#" class="footer__nav-link text-style">Проекты</a></li>
-              <li><a href="#" class="footer__nav-link text-style">Сертификаты</a></li>
-              <li><a href="#" class="footer__nav-link text-style">Контакты</a></li>
+              <li><a href="#hero" class="footer__nav-link text-style">Галерея</a></li>
+              <li><a href="#projects" class="footer__nav-link text-style">Проекты</a></li>
+              <li><a href="#about" class="footer__nav-link text-style">Сертификаты</a></li>
+              <li><a href="#contacts" class="footer__nav-link text-style">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -259,7 +259,7 @@
                 href="https://goo.gl/maps/XSWccQPUmA9QjgVb7"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="footer__contacts-link footer__contacts-link--locatoin text-style"
+                class="footer__contacts-link--locatoin text-style"
                 >100000, Республика Казахстан, <br />г. Караганда, ул. Телевизионная 10</a
               >
             </li>
@@ -267,17 +267,13 @@
               <svg aria-label="Phone" width="16" height="16">
                 <use href="./images/phone.svg#ph"></use>
               </svg>
-              <a href="tel:+380000000000" class="footer__contacts-link text-style">
-                +38 (000) 000 00 00
-              </a>
+              <a href="tel:+380000000000" class="text-style"> +38 (000) 000 00 00 </a>
             </li>
             <li class="footer__contacts-item">
               <svg aria-label="Mail" width="16" height="11">
                 <use href="./images/envelope.svg#env"></use>
               </svg>
-              <a href="mailto:mail@gmail.com" class="footer__contacts-link text-style">
-                mail@gmail.com
-              </a>
+              <a href="mailto:mail@gmail.com" class="text-style"> mail@gmail.com </a>
             </li>
           </ul>
         </div>
@@ -285,49 +281,29 @@
           <h3 class="footer__subtitle">Социальные сети</h3>
           <ul class="footer__social-list list--style">
             <li>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer__social-item"
-              >
-                <svg aria-label="Facebook" width="10" height="19">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <svg aria-label="Facebook" width="10" height="19" class="footer__icon">
                   <use href="./images/facebook.svg#fb"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a
-                href="https://twitter.com/"
-                class="footer__social-item"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg aria-label="Twitter" width="22" height="17">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <svg aria-label="Twitter" width="22" height="17" class="footer__icon">
                   <use href="./images/twitter.svg#tw"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer__social-item"
-              >
-                <svg aria-label="Linkedin" width="20" height="20">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <svg aria-label="Linkedin" width="20" height="20" class="footer__icon">
                   <use href="./images/linkedin.svg#li"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a
-                href="https://pinterest.com/"
-                class="footer__social-item"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg aria-label="Pininterest" width="14" height="19">
+              <a href="https://pinterest.com/" target="_blank" rel="noopener noreferrer">
+                <svg aria-label="Pininterest" width="14" height="19" class="footer__icon">
                   <use href="./images/pininterest.svg#pin"></use>
                 </svg>
               </a>
@@ -339,5 +315,8 @@
       <div class="footer__copyright">© 2019 Digital Project. Все права защищены.</div>
     </footer>
     <script src="./js/currentLink.js"></script>
+    <script src="./js/linkScroll.js"></script>
+    <script src="./js/headerScroll.js"></script>
+    <script src="./js/openMenu.js"></script>
   </body>
 </html>
